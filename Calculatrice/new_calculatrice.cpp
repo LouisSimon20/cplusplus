@@ -2,6 +2,23 @@
 #include <cstdlib>
 #include "stack.h"
 
+bool is_operand(char* token){
+    bool res=1;
+    int len = strlen(token);
+    for (int i=0; i<len; i++){
+        res = res*(token[i] >= '0' and token[i]<='9');
+    }
+    return res; //pb de 45g qui est opérande
+}
+bool is_operator(char* token){
+    char tok = token[0];
+    return((tok == 'x') or (tok == '!') or (tok == '+') or (tok == '-') or (tok == '/'));
+}
+bool is_binary(char* token){
+    char tok = token[0];
+    return((tok == 'x') or (tok == '+') or (tok == '-') or (tok == '/'));
+}
+
 int rpn_eval(int n, char* tab[]){
     bool erreur=0;
     int top=0;

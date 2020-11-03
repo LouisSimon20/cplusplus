@@ -16,8 +16,8 @@ void TestRpnCalc(){
     std::cout << std::boolalpha << "is_operand(" << expr <<")  retourne " << is_operand(expr) << std::endl;
     std::cout << std::boolalpha << "is_operand(" << a << ")  retourne " << is_operand(a) << std::endl << std::endl;
 
-    std::cout << std::boolalpha << "is_operand(" << expr << ")  retourne " << is_operand(expr) << std::endl;
-    std::cout << std::boolalpha << "is_operand(" << a << ")  retourne " << is_operand(a) << std::endl << std::endl;
+    std::cout << std::boolalpha << "is_operator(" << expr << ")  retourne " << is_operator(expr) << std::endl;
+    std::cout << std::boolalpha << "is_operator(" << a << ")  retourne " << is_operator(a) << std::endl << std::endl;
 
     std::cout << std::boolalpha << "is_binary(" << expr << ") retourne " << is_binary(expr) << std::endl << std::endl;
 

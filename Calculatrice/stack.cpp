@@ -1,13 +1,5 @@
 #include <iostream>
 
-int strlen(const char tab[]){
-    int i=0;
-    while (tab[i] != '\0'){
-        i=i+1;
-    }
-    return i;
-}
-
 void print(int* tab, int* top){
     std::cout << "[";
     for(int i=0; i<*top;i++){

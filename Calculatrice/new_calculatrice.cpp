@@ -1,14 +1,16 @@
 #include <iostream>
 #include <cstdlib>
+#include <cstring>
 #include "stack.h"
 
 bool is_operand(const char* token){
-    bool res=1;
+    bool res=true;
     int len = strlen(token);
     for (int i=0; i<len; i++){
-        res = res*(token[i] >= '0' and token[i]<='9');
+        if (not ((token[i] >= '0') and (token[i]<='9')))
+            return false;
     }
-    return res; //pb de 45g qui est opérande
+    return res;
 }
 bool is_operator(const char* token){
     char tok = token[0];
@@ -27,11 +29,11 @@ int rpn_eval(const int n, const char* tab[]){
     for(int i=0; i<n; i++){      
         print(stack, &top);
         if (is_operand(tab[i])){
-            int operand = atoi(tab[i]); //transformation en int
+            int operand = atoi(tab[i]);
             push(stack, operand, &top);
         }
 
-        if (is_operator(tab[i])){
+        else if (is_operator(tab[i])){
             
             if (!is_binary(tab[i])){ //uniquement pour le ! (-1)
                 int a = (-1)*pop(stack, &top);
@@ -45,7 +47,7 @@ int rpn_eval(const int n, const char* tab[]){
                 
                 switch (c) {
                     case '+':{
-                        int rep = a+b;
+                        int rep = b+a;
                         push(stack,rep, &top);
                         break;
                     }
@@ -55,7 +57,7 @@ int rpn_eval(const int n, const char* tab[]){
                         break;
                     }
                     case 'x':{
-                        int rep = a*b;
+                        int rep = b*a;
                         push(stack, rep, &top);
                         break;
                     }                    
@@ -67,10 +69,10 @@ int rpn_eval(const int n, const char* tab[]){
                 }    
             }
         }
-        if(!is_operand(tab[i]) and !is_operator(tab[i])){
+        else {
             std::cout << "ERREUR : mauvais caractère" << std::endl;
-            i = n; //Pour sortir de la boucle de calcul
             erreur = true;
+            break;
             }
     }
     if(erreur == 0){
@@ -78,5 +80,6 @@ int rpn_eval(const int n, const char* tab[]){
         delete_stack(stack);
         return res;
     }
+    delete_stack(stack);
     return 1;
 }

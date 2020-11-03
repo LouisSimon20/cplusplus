@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "stack.h"
 
-bool is_operand(char* token){
+bool is_operand(const char* token){
     bool res=1;
     int len = strlen(token);
     for (int i=0; i<len; i++){
@@ -10,16 +10,16 @@ bool is_operand(char* token){
     }
     return res; //pb de 45g qui est opérande
 }
-bool is_operator(char* token){
+bool is_operator(const char* token){
     char tok = token[0];
     return((tok == 'x') or (tok == '!') or (tok == '+') or (tok == '-') or (tok == '/'));
 }
-bool is_binary(char* token){
+bool is_binary(const char* token){
     char tok = token[0];
     return((tok == 'x') or (tok == '+') or (tok == '-') or (tok == '/'));
 }
 
-int rpn_eval(int n, char* tab[]){
+int rpn_eval(const int n, const char* tab[]){
     bool erreur=0;
     int top=0;
     int size = (n+1)/2;

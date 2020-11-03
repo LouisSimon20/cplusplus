@@ -1,6 +1,6 @@
 #include <iostream>
 
-int strlen(char tab[]){
+int strlen(const char tab[]){
     int i=0;
     while (tab[i] != '\0'){
         i=i+1;

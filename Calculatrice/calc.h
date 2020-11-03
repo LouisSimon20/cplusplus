@@ -1,5 +1,5 @@
-bool is_operand(char* token);
-bool is_operator(char* token);
-bool is_binary(char* token);
+bool is_operand(const char* token);
+bool is_operator(const char* token);
+bool is_binary(const char* token);
 
-int rpn_eval(int n, char* tab[]);
+int rpn_eval(const int n, const char* tab[]);

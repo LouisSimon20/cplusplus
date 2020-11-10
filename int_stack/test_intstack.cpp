@@ -47,7 +47,7 @@ void TestIntStack()
         std::cerr << erreur << '\n';
     }
 
-    std::cout << " st.pop([[) renvoie : ";
+    std::cout << "st.pop([[) renvoie : ";
     try
     {
         stempty.pop();

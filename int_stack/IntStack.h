@@ -13,6 +13,14 @@ public:
             throw("Wrong size : the size must be a positive integer");
         }
     }
+    IntStack( IntStack& rst) : size(rst.size), top(rst.top), stack(new int[size]){
+        for(int i; i<top; i++){
+            stack[i] = rst.stack[i];
+        }
+
+    }
+
+
     ~IntStack()
     {
         delete[] stack;

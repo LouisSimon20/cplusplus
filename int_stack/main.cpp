@@ -7,14 +7,13 @@ int main()
     TestIntStack();
 
     IntStack st(4);
+    IntStack st2 = st;
 
-    st.print();
     st.push(10);
-    st.print();
     st.push(20);
-    st.push(30);
+    st2.push(30);
     st.print();
+    st2.print();
 
-    std::cout << st.pop() << std::endl;
     return 0;
 }

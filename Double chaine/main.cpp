@@ -4,7 +4,7 @@
 
 int main()
 {
-    //TestIntList();
+    TestIntList();
 
 
     IntList l;
@@ -15,10 +15,10 @@ int main()
     l.add_back(9);
     l.add_back(8);
     l.print();
-    //l.remove_front();
+    l.remove_front();
     l.print();
     std::cout << l.search(5) << "\n" << l.search(10) << std::endl;
-    //l.remove(10);
+    l.remove(10);
     l.print();
     return 0;
 }

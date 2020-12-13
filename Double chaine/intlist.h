@@ -9,89 +9,92 @@ private:
    }
 
    int value;
-   IntCell* next_cell=0;
-   IntCell* previous_cell=0;
+   IntCell* next_cell=nullptr;
+   IntCell* previous_cell=nullptr;
 };
 
 
 class IntList {
 public:    
-   IntList(){
-
-   }
-
    ~IntList(){
-      //a modifier
-      IntCell* pcell = last_cell;
-      while(pcell!=first_cell){
+      if (first_cell != nullptr){
+         IntCell* pcell = last_cell;
+         while(pcell!=first_cell){
+            delete pcell->next_cell;
+            pcell = pcell->previous_cell;
+         }
          delete pcell->next_cell;
-         pcell = pcell->previous_cell;
+         delete pcell;
       }
-      delete pcell;
    }
 
    void add_front (int valeur) {
       IntCell* pcell = new IntCell(valeur);
-      //std::cout << pcell /*<< "  "<< *(pcell->pvalue) << " " << pcell->pvalue */<< std::endl;
 
-      if (first_cell!=0){
+      if (first_cell!=nullptr){ //il existe au moins une cellule
          pcell->next_cell = first_cell; // lien vers la queue de liste
          first_cell->previous_cell = pcell;  //lien vers la tête de liste
       }
-      if (first_cell == 0 and last_cell!=0){
-         pcell->next_cell = last_cell; // lien retour
-         last_cell->previous_cell = pcell;  //lien avant
-      }
-      if (first_cell == 0 and last_cell == 0){
+      else{
          last_cell = pcell;
       }
-      first_cell = pcell; //actualisation liste
+      first_cell = pcell;//actualisation de la liste
    }
 
    void add_back (int valeur) {
       IntCell* pcell = new IntCell(valeur);
 
-      if (last_cell != 0){
+      if (last_cell != nullptr){
          pcell->previous_cell = last_cell;
          last_cell->next_cell = pcell;
       }
-      if (last_cell == 0 and first_cell!=0){
-         pcell->previous_cell = first_cell; // lien retour
-         first_cell->next_cell = pcell;  //lien avant
-      }
-      if (first_cell == 0 and last_cell == 0){
+      else{
          first_cell = pcell;
       }
-      last_cell = pcell; //actualisation liste
+      last_cell = pcell;
    }
 
    void remove_front () {
-      if (first_cell !=0){
-         first_cell = first_cell->next_cell;
-         delete first_cell->previous_cell;
+      if (first_cell != nullptr){
+         if (first_cell->next_cell != nullptr){ 
+            first_cell = first_cell->next_cell;
+            delete first_cell->previous_cell;
+         }
+         else{   //il n'y a qu'une seule cellule
+            delete first_cell;
+            first_cell = nullptr;
+            last_cell = nullptr;
+         }
       }
    }
    
    void remove_back () {
-      if (last_cell !=0){
-         last_cell = last_cell->previous_cell;
-         delete last_cell->next_cell;
+      if (last_cell !=nullptr){
+         if (last_cell->previous_cell != nullptr){
+            last_cell = last_cell->previous_cell;
+            delete last_cell->next_cell;
+         }
+         else{
+            delete last_cell;
+            first_cell = nullptr;
+            last_cell = nullptr;
+         }
       }
    }
 
    void remove (int valeur) {
          IntCell* pcell = last_cell;
 
-         while(pcell->previous_cell != 0){
+         while(pcell->previous_cell != nullptr){
             if (valeur == pcell->value){
 
                if (pcell == first_cell){
-                  (pcell->next_cell)->previous_cell = 0;
+                  (pcell->next_cell)->previous_cell = nullptr;
                   first_cell = pcell->next_cell;
                }
 
                if (pcell == last_cell){
-                  (pcell->previous_cell)->next_cell = 0;
+                  (pcell->previous_cell)->next_cell = nullptr;
                   last_cell = pcell->previous_cell;
                }
                else{
@@ -110,7 +113,7 @@ public:
       bool result = false;
       IntCell* pcell = last_cell;
 
-      while((pcell->previous_cell != 0) and result == false){
+      while((pcell->previous_cell != nullptr) and result == false){
          if (value == pcell->value){
             result = true;
          }
@@ -122,16 +125,17 @@ public:
    void print () {
       std::cout << '{';
       IntCell* pcell = last_cell;
-
-      while(pcell!= first_cell)
-      {
-         std::cout << pcell->value << " ";
-         pcell = pcell->previous_cell;
+      if (pcell != nullptr){
+         while(pcell!= first_cell)
+         {
+            std::cout << pcell->value << " ";
+            pcell = pcell->previous_cell;
+         }
+         std::cout << first_cell->value;
       }
-      std::cout << first_cell->value << "}" << std::endl;
-
+      std::cout << "}" << std::endl;
     }
 private:
-   IntCell* first_cell=0;
-   IntCell* last_cell=0;
+   IntCell* first_cell=nullptr;
+   IntCell* last_cell=nullptr;
 };

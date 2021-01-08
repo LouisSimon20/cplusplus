@@ -32,10 +32,6 @@ void TestIntList()
     liste1.remove(1);
     liste1.print();
 
-    std::cout << "Suppression d'un élément unique : " << std::endl;
-    liste1.remove_front();
-    liste1.print();
-
     std::cout << "-----------------FIN TEST-----------------" << std::endl
               << std::endl;
 }

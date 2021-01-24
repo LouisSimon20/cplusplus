@@ -1,0 +1,165 @@
+\hypertarget{classMorse}{}\doxysection{Référence de la classe Morse}
+\label{classMorse}\index{Morse@{Morse}}
+
+
+Classe permettant d\textquotesingle{}encoder le message morse(.--) en wav.  
+
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMorse_a14e617d76bb2237b430e3f890e2d87ee}{Morse}} (std\+::string morse)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMorse}{Morse}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMorse_a92853f32d70c461a7479ccfbddc7683c}{Acquire}} ()
+\begin{DoxyCompactList}\small\item\em Demande à l\textquotesingle{}utilisateur le chemin du fichier audio qu\textquotesingle{}il veut créer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMorse_a978b0b94ebaf6340ebd71b32dac2987d}{ecrire\+\_\+little\+\_\+endian}} (unsigned int octets, int taille, std\+::ofstream \&fichier)
+\begin{DoxyCompactList}\small\item\em Ecrit un entier en little endian sur n=taille bits. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMorse_a6f6bdf6730a08467652eede729d7626a}{taille\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la taille du message en ti. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMorse_a21f801e6b19ce802328ef4eb9ef65eef}{ecrire\+\_\+en\+\_\+tete\+\_\+\+W\+AV}} (std\+::ofstream \&fichier)
+\begin{DoxyCompactList}\small\item\em Ecrit l\textquotesingle{}entête du fichier audio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMorse_ae1021595e1abfb52e1b433a00edda297}{ecrire\+\_\+donnees}} (std\+::ofstream \&fichier)
+\begin{DoxyCompactList}\small\item\em Ecrit les données du fichier audio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMorse_af6c396cb39a0e1bad55e01af96ab70a9}{translate\+MtoW}} ()
+\begin{DoxyCompactList}\small\item\em Crée le fichier audio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMorse_a3fd5b737f7912dfcfc09dbc27e481b0a}{encodage}} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant d\textquotesingle{}encoder le francais en fichier son, en choisissant la provenance du texte et le nom du fichier à produire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMorse_adeae7fb9669881d74bfba0119cf569da}\label{classMorse_adeae7fb9669881d74bfba0119cf569da}} 
+void {\bfseries morse\+\_\+construction} ()
+\item 
+\mbox{\Hypertarget{classMorse_a3535da8fd33b1144a75397db17dffcc6}\label{classMorse_a3535da8fd33b1144a75397db17dffcc6}} 
+void {\bfseries morse\+\_\+taille} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe permettant d\textquotesingle{}encoder le message morse(.--) en wav. 
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classMorse_a14e617d76bb2237b430e3f890e2d87ee}\label{classMorse_a14e617d76bb2237b430e3f890e2d87ee}} 
+\index{Morse@{Morse}!Morse@{Morse}}
+\index{Morse@{Morse}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{Morse()}{Morse()}}
+{\footnotesize\ttfamily Morse\+::\+Morse (\begin{DoxyParamCaption}\item[{std\+::string}]{morse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classMorse}{Morse}} object. 
+
+Initialisation des 3 sons du fichier wav (blanc, ti, taah) 
+\begin{DoxyParams}{Paramètres}
+{\em morse} & message en morse \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classMorse_a92853f32d70c461a7479ccfbddc7683c}\label{classMorse_a92853f32d70c461a7479ccfbddc7683c}} 
+\index{Morse@{Morse}!Acquire@{Acquire}}
+\index{Acquire@{Acquire}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{Acquire()}{Acquire()}}
+{\footnotesize\ttfamily void Morse\+::\+Acquire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Demande à l\textquotesingle{}utilisateur le chemin du fichier audio qu\textquotesingle{}il veut créer. 
+
+\mbox{\Hypertarget{classMorse_ae1021595e1abfb52e1b433a00edda297}\label{classMorse_ae1021595e1abfb52e1b433a00edda297}} 
+\index{Morse@{Morse}!ecrire\_donnees@{ecrire\_donnees}}
+\index{ecrire\_donnees@{ecrire\_donnees}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{ecrire\_donnees()}{ecrire\_donnees()}}
+{\footnotesize\ttfamily void Morse\+::ecrire\+\_\+donnees (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{fichier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ecrit les données du fichier audio. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fichier} & flux du fichier dans lequel écrire les données \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMorse_a21f801e6b19ce802328ef4eb9ef65eef}\label{classMorse_a21f801e6b19ce802328ef4eb9ef65eef}} 
+\index{Morse@{Morse}!ecrire\_en\_tete\_WAV@{ecrire\_en\_tete\_WAV}}
+\index{ecrire\_en\_tete\_WAV@{ecrire\_en\_tete\_WAV}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{ecrire\_en\_tete\_WAV()}{ecrire\_en\_tete\_WAV()}}
+{\footnotesize\ttfamily void Morse\+::ecrire\+\_\+en\+\_\+tete\+\_\+\+W\+AV (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{fichier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ecrit l\textquotesingle{}entête du fichier audio. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fichier} & flux du fichier dans lequel écrire l\textquotesingle{}entête. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMorse_a978b0b94ebaf6340ebd71b32dac2987d}\label{classMorse_a978b0b94ebaf6340ebd71b32dac2987d}} 
+\index{Morse@{Morse}!ecrire\_little\_endian@{ecrire\_little\_endian}}
+\index{ecrire\_little\_endian@{ecrire\_little\_endian}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{ecrire\_little\_endian()}{ecrire\_little\_endian()}}
+{\footnotesize\ttfamily void Morse\+::ecrire\+\_\+little\+\_\+endian (\begin{DoxyParamCaption}\item[{unsigned int}]{octets,  }\item[{int}]{taille,  }\item[{std\+::ofstream \&}]{fichier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ecrit un entier en little endian sur n=taille bits. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octets} & L\textquotesingle{}entier à convertir \\
+\hline
+{\em taille} & Le nombre de bits sur lequel l\textquotesingle{}écrire \\
+\hline
+{\em fichier} & Le flux du fichier dans lequel l\textquotesingle{}écrire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMorse_a6f6bdf6730a08467652eede729d7626a}\label{classMorse_a6f6bdf6730a08467652eede729d7626a}} 
+\index{Morse@{Morse}!tailleMessage@{tailleMessage}}
+\index{tailleMessage@{tailleMessage}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{tailleMessage()}{tailleMessage()}}
+{\footnotesize\ttfamily int Morse\+::taille\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcule la taille du message en ti. 
+
+Cette fonction permet d\textquotesingle{}écrire l\textquotesingle{}entête avant les données. ~\newline
+En effet, la taille du fichier est à spécifier dans l\textquotesingle{}entête. ~\newline
+La taille est calculée en ti \+: si le message est \char`\"{}.-\/\char`\"{}, la taille sera de (1+1) + (3+1)
+
+\begin{DoxyReturn}{Renvoie}
+int -\/ taille du message en ti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMorse_af6c396cb39a0e1bad55e01af96ab70a9}\label{classMorse_af6c396cb39a0e1bad55e01af96ab70a9}} 
+\index{Morse@{Morse}!translateMtoW@{translateMtoW}}
+\index{translateMtoW@{translateMtoW}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{translateMtoW()}{translateMtoW()}}
+{\footnotesize\ttfamily void Morse\+::translate\+MtoW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crée le fichier audio. 
+
+Cette fonction permet de laisser le choix à l\textquotesingle{}utilisateur de spécifier un chemin pour le fichier audio. 
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{classMorse_a3fd5b737f7912dfcfc09dbc27e481b0a}\label{classMorse_a3fd5b737f7912dfcfc09dbc27e481b0a}} 
+\index{Morse@{Morse}!encodage@{encodage}}
+\index{encodage@{encodage}!Morse@{Morse}}
+\doxysubsubsection{\texorpdfstring{encodage}{encodage}}
+{\footnotesize\ttfamily void encodage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Fonction permettant d\textquotesingle{}encoder le francais en fichier son, en choisissant la provenance du texte et le nom du fichier à produire. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{morsetowav_8cpp}{morsetowav.\+cpp}}\end{DoxyCompactItemize}

@@ -1,1 +1,0 @@
-Explications sur le projet sur la page d'aide

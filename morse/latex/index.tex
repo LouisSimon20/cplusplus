@@ -1,1 +1,18 @@
-slt 
+Deux exécutables sont disponible\+:
+\begin{DoxyItemize}
+\item tradu \+: pour lancer le traducteur
+\item test \+: pour lancer les tests
+\end{DoxyItemize}
+
+Dans le traducteur, un menu permet d\textquotesingle{}accéder soit à l\textquotesingle{}encodage, soit au décodage.
+
+L\textquotesingle{}encodage peut se faire à partir du terminal ou en spécifiant le chemin d\textquotesingle{}un fichier texte. Il est possible de choisir le chemin du fichier audio qui sera créé. Il est possible d\textquotesingle{}encoder les lettres, les chiffres et une ponctuation simple.
+
+Le décodage se fait en spécifiant le chemin d\textquotesingle{}un fichier audio. Le message est écrit dans le terminal. Seulement les 26 lettres de l\textquotesingle{}alphabet sont disponibles dans ce sens.
+
+Le codage est divisé en 3 étapes \+:
+\begin{DoxyItemize}
+\item Francais (ex \+: \char`\"{}je suis un exemple\char`\"{})
+\item \mbox{\hyperlink{classMorse}{Morse}} (ex \+: \char`\"{}..-\/-\/ . -\/ / . -\/-\/.-\/\char`\"{})
+\item \mbox{\hyperlink{classWav}{Wav}}(les données adaptées pour les fichiers wav) 
+\end{DoxyItemize}

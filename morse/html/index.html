@@ -61,11 +61,24 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Encodeur/décodeur francais/morse Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p>Deux exécutables sont disponible:</p><ul>
+<li>tradu : pour lancer le traducteur</li>
+<li>test : pour lancer les tests</li>
+</ul>
+<p>Dans le traducteur, un menu permet d'accéder soit à l'encodage, soit au décodage.</p>
+<p>L'encodage peut se faire à partir du terminal ou en spécifiant le chemin d'un fichier texte. Il est possible de choisir le chemin du fichier audio qui sera créé. Il est possible d'encoder les lettres, les chiffres et une ponctuation simple.</p>
+<p>Le décodage se fait en spécifiant le chemin d'un fichier audio. Le message est écrit dans le terminal. Seulement les 26 lettres de l'alphabet sont disponibles dans ce sens.</p>
+<p>Le codage est divisé en 3 étapes :</p><ul>
+<li>Francais (ex : "je suis un exemple")</li>
+<li><a class="el" href="classMorse.html" title="Classe permettant d&#39;encoder le message morse(.–) en wav.">Morse</a> (ex : "..-- . - / . --.-")</li>
+<li><a class="el" href="classWav.html" title="Classe permettant d&#39;extraire les données d&#39;un fichier wav et de les transformer en morse (....">Wav</a>(les données adaptées pour les fichiers wav) </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

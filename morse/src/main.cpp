@@ -16,7 +16,9 @@
  * 
  */
 void clear(){    
-  while ( getchar() != '\n' );
+  while ( getchar() != '\n' ){
+      
+  };
 }
 
 /**

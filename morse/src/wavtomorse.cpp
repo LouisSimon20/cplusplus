@@ -53,7 +53,7 @@ public:
     void acq_entete(){
         //ChunkID (= RIFF)
         (*pfile).read(ChunkID, 4);
-        
+
         //ChunkSize
         ChunkSize = lire_wav(4, (*pfile));
 
@@ -98,9 +98,13 @@ public:
      */
     bool verif_entete(){
         bool flag=true;
+        std::cout << flag << std::endl;
         flag = ((ChunkID[0] == 'R') & (ChunkID[1] == 'I') & (ChunkID[2] == 'F') & (ChunkID[3] == 'F'));
+        std::cout << ChunkID << std::endl;
         flag = flag & ((Format[0] == 'W') & (Format[1] == 'A') & (Format[2] == 'V') & (Format[3] == 'E'));
+        std::cout << Format << std::endl;
         flag = flag & ((Subchunk1ID[0] == 'f') & (Subchunk1ID[1] == 'm') & (Subchunk1ID[2] == 't') & (Subchunk1ID[3] == ' '));
+        std::cout << Subchunk1ID << std::endl;
         flag = flag & ((Subchunk2ID[0] == 'd') & (Subchunk2ID[1] == 'a') & (Subchunk2ID[2] == 't') & (Subchunk2ID[3] == 'a'));
         //on pourrait également vérifier la correspondance entre les valeurs comme BlockAlign
         

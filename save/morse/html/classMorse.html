@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Encodeur/décodeur francais/morse: Référence de la classe Morse</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Encodeur/décodeur francais/morse
+   </div>
+   <div id="projectbrief">Projet UE12 c++ - SIMON Louis</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#friends">Amis</a> &#124;
+<a href="classMorse-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Morse</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe permettant d'encoder le message morse(.&ndash;) en wav.  
+ <a href="classMorse.html#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a14e617d76bb2237b430e3f890e2d87ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#a14e617d76bb2237b430e3f890e2d87ee">Morse</a> (std::string morse)</td></tr>
+<tr class="memdesc:a14e617d76bb2237b430e3f890e2d87ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classMorse.html" title="Classe permettant d&#39;encoder le message morse(.–) en wav.">Morse</a> object.  <a href="classMorse.html#a14e617d76bb2237b430e3f890e2d87ee">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a14e617d76bb2237b430e3f890e2d87ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92853f32d70c461a7479ccfbddc7683c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#a92853f32d70c461a7479ccfbddc7683c">Acquire</a> ()</td></tr>
+<tr class="memdesc:a92853f32d70c461a7479ccfbddc7683c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande à l'utilisateur le chemin du fichier audio qu'il veut créer.  <a href="classMorse.html#a92853f32d70c461a7479ccfbddc7683c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a92853f32d70c461a7479ccfbddc7683c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978b0b94ebaf6340ebd71b32dac2987d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#a978b0b94ebaf6340ebd71b32dac2987d">ecrire_little_endian</a> (unsigned int octets, int taille, std::ofstream &amp;fichier)</td></tr>
+<tr class="memdesc:a978b0b94ebaf6340ebd71b32dac2987d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecrit un entier en little endian sur n=taille bits.  <a href="classMorse.html#a978b0b94ebaf6340ebd71b32dac2987d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a978b0b94ebaf6340ebd71b32dac2987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6bdf6730a08467652eede729d7626a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#a6f6bdf6730a08467652eede729d7626a">tailleMessage</a> ()</td></tr>
+<tr class="memdesc:a6f6bdf6730a08467652eede729d7626a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la taille du message en ti.  <a href="classMorse.html#a6f6bdf6730a08467652eede729d7626a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6f6bdf6730a08467652eede729d7626a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f801e6b19ce802328ef4eb9ef65eef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#a21f801e6b19ce802328ef4eb9ef65eef">ecrire_en_tete_WAV</a> (std::ofstream &amp;fichier)</td></tr>
+<tr class="memdesc:a21f801e6b19ce802328ef4eb9ef65eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecrit l'entête du fichier audio.  <a href="classMorse.html#a21f801e6b19ce802328ef4eb9ef65eef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a21f801e6b19ce802328ef4eb9ef65eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1021595e1abfb52e1b433a00edda297"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#ae1021595e1abfb52e1b433a00edda297">ecrire_donnees</a> (std::ofstream &amp;fichier)</td></tr>
+<tr class="memdesc:ae1021595e1abfb52e1b433a00edda297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecrit les données du fichier audio.  <a href="classMorse.html#ae1021595e1abfb52e1b433a00edda297">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae1021595e1abfb52e1b433a00edda297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c396cb39a0e1bad55e01af96ab70a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#af6c396cb39a0e1bad55e01af96ab70a9">translateMtoW</a> ()</td></tr>
+<tr class="memdesc:af6c396cb39a0e1bad55e01af96ab70a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée le fichier audio.  <a href="classMorse.html#af6c396cb39a0e1bad55e01af96ab70a9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af6c396cb39a0e1bad55e01af96ab70a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amis</h2></td></tr>
+<tr class="memitem:a3fd5b737f7912dfcfc09dbc27e481b0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorse.html#a3fd5b737f7912dfcfc09dbc27e481b0a">encodage</a> ()</td></tr>
+<tr class="memdesc:a3fd5b737f7912dfcfc09dbc27e481b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'encoder le francais en fichier son, en choisissant la provenance du texte et le nom du fichier à produire.  <a href="classMorse.html#a3fd5b737f7912dfcfc09dbc27e481b0a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3fd5b737f7912dfcfc09dbc27e481b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeae7fb9669881d74bfba0119cf569da"><td class="memItemLeft" align="right" valign="top"><a id="adeae7fb9669881d74bfba0119cf569da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>morse_construction</b> ()</td></tr>
+<tr class="separator:adeae7fb9669881d74bfba0119cf569da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3535da8fd33b1144a75397db17dffcc6"><td class="memItemLeft" align="right" valign="top"><a id="a3535da8fd33b1144a75397db17dffcc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>morse_taille</b> ()</td></tr>
+<tr class="separator:a3535da8fd33b1144a75397db17dffcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe permettant d'encoder le message morse(.&ndash;) en wav. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a14e617d76bb2237b430e3f890e2d87ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e617d76bb2237b430e3f890e2d87ee">&#9670;&nbsp;</a></span>Morse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Morse::Morse </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>morse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classMorse.html" title="Classe permettant d&#39;encoder le message morse(.–) en wav.">Morse</a> object. </p>
+<p>Initialisation des 3 sons du fichier wav (blanc, ti, taah) </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">morse</td><td>message en morse </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a92853f32d70c461a7479ccfbddc7683c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92853f32d70c461a7479ccfbddc7683c">&#9670;&nbsp;</a></span>Acquire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Morse::Acquire </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Demande à l'utilisateur le chemin du fichier audio qu'il veut créer. </p>
+
+</div>
+</div>
+<a id="ae1021595e1abfb52e1b433a00edda297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1021595e1abfb52e1b433a00edda297">&#9670;&nbsp;</a></span>ecrire_donnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Morse::ecrire_donnees </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>fichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ecrit les données du fichier audio. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fichier</td><td>flux du fichier dans lequel écrire les données </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a21f801e6b19ce802328ef4eb9ef65eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f801e6b19ce802328ef4eb9ef65eef">&#9670;&nbsp;</a></span>ecrire_en_tete_WAV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Morse::ecrire_en_tete_WAV </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>fichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ecrit l'entête du fichier audio. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fichier</td><td>flux du fichier dans lequel écrire l'entête. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a978b0b94ebaf6340ebd71b32dac2987d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978b0b94ebaf6340ebd71b32dac2987d">&#9670;&nbsp;</a></span>ecrire_little_endian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Morse::ecrire_little_endian </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>octets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>fichier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ecrit un entier en little endian sur n=taille bits. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">octets</td><td>L'entier à convertir </td></tr>
+    <tr><td class="paramname">taille</td><td>Le nombre de bits sur lequel l'écrire </td></tr>
+    <tr><td class="paramname">fichier</td><td>Le flux du fichier dans lequel l'écrire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f6bdf6730a08467652eede729d7626a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6bdf6730a08467652eede729d7626a">&#9670;&nbsp;</a></span>tailleMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Morse::tailleMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcule la taille du message en ti. </p>
+<p>Cette fonction permet d'écrire l'entête avant les données. <br  />
+En effet, la taille du fichier est à spécifier dans l'entête. <br  />
+La taille est calculée en ti : si le message est ".-", la taille sera de (1+1) + (3+1)</p>
+<dl class="section return"><dt>Renvoie</dt><dd>int - taille du message en ti </dd></dl>
+
+</div>
+</div>
+<a id="af6c396cb39a0e1bad55e01af96ab70a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c396cb39a0e1bad55e01af96ab70a9">&#9670;&nbsp;</a></span>translateMtoW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Morse::translateMtoW </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Crée le fichier audio. </p>
+<p>Cette fonction permet de laisser le choix à l'utilisateur de spécifier un chemin pour le fichier audio. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions amies et associées</h2>
+<a id="a3fd5b737f7912dfcfc09dbc27e481b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd5b737f7912dfcfc09dbc27e481b0a">&#9670;&nbsp;</a></span>encodage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encodage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fonction permettant d'encoder le francais en fichier son, en choisissant la provenance du texte et le nom du fichier à produire. </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>src/<a class="el" href="morsetowav_8cpp.html">morsetowav.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

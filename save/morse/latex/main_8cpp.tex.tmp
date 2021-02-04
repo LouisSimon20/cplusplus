@@ -1,0 +1,79 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}frtomorse.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}morsetowav.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wavtomorse.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}morsetofr.\+cpp\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a6b0067666ba7d74453f3a3c2c61d84a6}{Menu}} ()
+\begin{DoxyCompactList}\small\item\em Fonction proposant un menu permettant de choisir entre encodage et decodage d\textquotesingle{}un message morse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ac8bb3912a3ce86b15842e79d0b421204}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant de nettoyer le stream (utile dans le menu de choix) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ab8aaa545bbab81f88b30dcdbed8f8841}{decodage}} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant de décoder un message audio (wav) et d\textquotesingle{}afficher le message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a3fd5b737f7912dfcfc09dbc27e481b0a}{encodage}} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant d\textquotesingle{}encoder le francais en fichier son, en choisissant la provenance du texte et le nom du fichier à produire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Louis S\+I\+M\+ON 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021-\/01-\/23 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ac8bb3912a3ce86b15842e79d0b421204}\label{main_8cpp_ac8bb3912a3ce86b15842e79d0b421204}} 
+\index{main.cpp@{main.cpp}!clear@{clear}}
+\index{clear@{clear}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de nettoyer le stream (utile dans le menu de choix) 
+
+\mbox{\Hypertarget{main_8cpp_ab8aaa545bbab81f88b30dcdbed8f8841}\label{main_8cpp_ab8aaa545bbab81f88b30dcdbed8f8841}} 
+\index{main.cpp@{main.cpp}!decodage@{decodage}}
+\index{decodage@{decodage}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{decodage()}{decodage()}}
+{\footnotesize\ttfamily void decodage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de décoder un message audio (wav) et d\textquotesingle{}afficher le message. 
+
+\mbox{\Hypertarget{main_8cpp_a3fd5b737f7912dfcfc09dbc27e481b0a}\label{main_8cpp_a3fd5b737f7912dfcfc09dbc27e481b0a}} 
+\index{main.cpp@{main.cpp}!encodage@{encodage}}
+\index{encodage@{encodage}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{encodage()}{encodage()}}
+{\footnotesize\ttfamily void encodage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant d\textquotesingle{}encoder le francais en fichier son, en choisissant la provenance du texte et le nom du fichier à produire. 
+
+\mbox{\Hypertarget{main_8cpp_a6b0067666ba7d74453f3a3c2c61d84a6}\label{main_8cpp_a6b0067666ba7d74453f3a3c2c61d84a6}} 
+\index{main.cpp@{main.cpp}!Menu@{Menu}}
+\index{Menu@{Menu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily int Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction proposant un menu permettant de choisir entre encodage et decodage d\textquotesingle{}un message morse. 
+
+\begin{DoxyReturn}{Returns}
+int correspondant a l\textquotesingle{}option du menu choisi 
+\end{DoxyReturn}

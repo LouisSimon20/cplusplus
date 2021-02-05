@@ -1,1 +1,0 @@
-dérivation de classe
